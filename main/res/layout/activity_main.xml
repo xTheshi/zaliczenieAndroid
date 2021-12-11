@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlo"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/punktyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/punktUp"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:includeFontPadding="false"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="#FFFFFF"
+        android:text="100"
+        android:textSize="12sp"
+        app:cornerRadius="999dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/opisTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bonus * 2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/punktUp"
+        app:layout_constraintEnd_toEndOf="@+id/punktUp"
+        app:layout_constraintStart_toStartOf="@+id/punktUp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/punktButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/gradient"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="#FFFFFF"
+        android:text="+1\nKlikaj"
+        android:textSize="36sp"
+        app:cornerRadius="999dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/punktyTextView"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/upButton"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:background="@drawable/gradient"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="#FFFFFF"
+        android:text="10"
+        app:cornerRadius="999dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarUp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarUp"
+        app:layout_constraintStart_toStartOf="@+id/progressBarUp"
+        app:layout_constraintTop_toTopOf="@+id/progressBarUp"
+        tools:ignore="HardcodedText" />
+
+    <ProgressBar
+
+        android:id="@+id/progressBarUp"
+        android:layout_width="74dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/kolo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarUpTimer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="256dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="32dp"
+        android:scrollbarSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBarUp" />
+
+    <TextView
+        android:id="@+id/textViewUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="+0"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarUpTimer"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarUpTimer"
+        app:layout_constraintStart_toEndOf="@+id/progressBarUp"
+        app:layout_constraintTop_toTopOf="@+id/progressBarUpTimer"
+        tools:ignore="HardcodedText" />
+
+    **********
+
+    <Button
+
+        android:id="@+id/upButton1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:background="@drawable/gradient"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="#FFFFFF"
+        android:text="100"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:cornerRadius="999dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarUp1"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarUp1"
+        app:layout_constraintStart_toStartOf="@+id/progressBarUp1"
+        app:layout_constraintTop_toTopOf="@+id/progressBarUp1"
+        tools:ignore="HardcodedText" />
+
+    <ProgressBar
+        android:id="@+id/progressBarUp1"
+        android:layout_width="74dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/kolo"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarUp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarUpTimer1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="256dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="32dp"
+        android:scrollbarSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarUpTimer"
+        app:layout_constraintStart_toEndOf="@+id/progressBarUp1" />
+
+    <TextView
+        android:id="@+id/textViewUp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="+0"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarUpTimer1"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarUpTimer1"
+        app:layout_constraintStart_toEndOf="@+id/progressBarUp1"
+        app:layout_constraintTop_toTopOf="@+id/progressBarUpTimer1"
+        tools:ignore="HardcodedText" />
+    *************
+
+    <Button
+        android:id="@+id/upButton2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:background="@drawable/gradient"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="#FFFFFF"
+        android:text="10k"
+        app:cornerRadius="999dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarUp2"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarUp2"
+        app:layout_constraintStart_toStartOf="@+id/progressBarUp2"
+        app:layout_constraintTop_toTopOf="@+id/progressBarUp2"
+        tools:ignore="HardcodedText" />
+
+    <ProgressBar
+        android:id="@+id/progressBarUp2"
+        android:layout_width="74dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="36dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/kolo"
+        app:layout_constraintBottom_toTopOf="@+id/upButton1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarUpTimer2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="256dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="32dp"
+        android:scrollbarSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarUpTimer1"
+        app:layout_constraintStart_toEndOf="@+id/progressBarUp2" />
+
+    <TextView
+        android:id="@+id/textViewUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="+0"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarUpTimer2"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarUpTimer2"
+        app:layout_constraintStart_toEndOf="@+id/progressBarUp2"
+        app:layout_constraintTop_toTopOf="@+id/progressBarUpTimer2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Bonusy pasywne"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/upButton2"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarUp2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/progressBarUp2"
+        tools:ignore="HardcodedText" />
+    **********
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
